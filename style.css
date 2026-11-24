@@ -1,0 +1,236 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background-color: #f1f5f9;
+  color: #1e293b;
+  line-height: 1.6;
+  padding: 24px 16px;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Header & Navigasi */
+.site-header {
+  background-color: #0b4f6c;
+  color: #ffffff;
+  padding: 20px 24px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.site-header h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.site-header nav {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.site-header nav a {
+  background-color: #146c94;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.site-header nav a:hover,
+.site-header nav a:focus-visible {
+  background-color: #1982b0;
+}
+
+/* Kartu Umum & Main */
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  padding: 20px 24px;
+}
+
+h2 {
+  font-size: 1.2rem;
+  color: #0b4f6c;
+  margin-bottom: 10px;
+}
+
+/* Section Tentang */
+.section-tentang {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.tentang-img {
+  width: 240px;
+  max-width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  background-color: #e2e8f0;
+}
+
+.tentang-content {
+  flex: 1;
+  min-width: 260px;
+}
+
+.tentang-content p {
+  margin-bottom: 12px;
+}
+
+.external-link {
+  display: inline-block;
+  color: #0b4f6c;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.external-link:hover,
+.external-link:focus-visible {
+  text-decoration: underline;
+}
+
+/* Section Rundown (2 Kolom Flexbox) */
+.section-rundown {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.rundown-box {
+  flex: 1;
+  min-width: 280px;
+}
+
+.rundown-box ul,
+.rundown-box ol {
+  padding-left: 20px;
+}
+
+.rundown-box li {
+  margin-bottom: 6px;
+}
+
+/* Section Formulir Pendaftaran */
+.daftar-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.form-row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  flex: 1;
+  min-width: 180px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #334155;
+}
+
+.form-group input,
+.form-group select {
+  padding: 9px 12px;
+  border: 1px solid #94a3b8;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  background-color: #ffffff;
+  color: #0f172a;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-top: 4px;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.checkbox-group input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #0b4f6c;
+}
+
+.btn-submit {
+  background-color: #0b4f6c;
+  color: #ffffff;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-submit:hover,
+.btn-submit:focus-visible {
+  background-color: #083a50;
+}
+
+/* Indikator Fokus Aksesibel (Uji Tombol Tab) */
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+button:focus-visible {
+  outline: 3px solid #f59e0b;
+  outline-offset: 2px;
+}
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  padding: 14px;
+  background-color: #e2e8f0;
+  color: #334155;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}

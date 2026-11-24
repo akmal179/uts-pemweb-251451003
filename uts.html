@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Workshop Pemrograman Web — Informasi &amp; Pendaftaran</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <header class="site-header">
+        <h1>Workshop Pemrograman Web Kampus</h1>
+        <nav aria-label="Navigasi Utama">
+          <a href="#tentang">Tentang</a>
+          <a href="#rundown">Rundown</a>
+          <a href="#daftar">Daftar</a>
+        </nav>
+      </header>
+
+      <main>
+        <section id="tentang" class="card section-tentang">
+          <img
+            src="images/kegiatan.jpg"
+            alt="Ilustrasi kegiatan workshop pengembangan antarmuka web dengan HTML5 dan CSS Flexbox"
+            class="tentang-img"
+          >
+          <div class="tentang-content">
+            <h2>Tentang Kegiatan</h2>
+            <p>
+              Kegiatan ini merupakan <strong>pelatihan intensif pengembangan antarmuka web modern</strong>
+              menggunakan HTML semantik dan CSS Flexbox agar mahasiswa mampu menyusun halaman yang
+              <em>rapi, responsif, dan aksesibel</em>.
+            </p>
+            <a
+              href="https://developer.mozilla.org/id/docs/Learn"
+              target="_blank"
+              rel="noreferrer"
+              class="external-link"
+            >
+              Baca Panduan Lengkap Kegiatan &nearr;
+            </a>
+          </div>
+        </section>
+
+        <section id="rundown" class="section-rundown">
+          <div class="card rundown-box">
+            <h2>Syarat Peserta</h2>
+            <ul>
+              <li>Mahasiswa aktif Fakultas Sains dan Teknologi Informasi.</li>
+              <li>Membawa laptop pribadi dengan browser dan teks editor terpasang.</li>
+              <li>Memahami struktur dasar dokumen HTML dan CSS.</li>
+            </ul>
+          </div>
+
+          <div class="card rundown-box">
+            <h2>Alur Pendaftaran</h2>
+            <ol>
+              <li>Isi data diri lengkap pada formulir pendaftaran di bawah ini.</li>
+              <li>Verifikasi kelengkapan identitas dan alamat surel aktif.</li>
+              <li>Kirim pendaftaran dan tunggu konfirmasi dari panitia.</li>
+            </ol>
+          </div>
+        </section>
+
+        <section id="daftar" class="card section-daftar">
+          <h2>Formulir Pendaftaran</h2>
+          <form action="#" method="post" class="daftar-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nama">Nama Lengkap</label>
+                <input
+                  id="nama"
+                  name="nama"
+                  type="text"
+                  placeholder="Masukkan nama lengkap"
+                  required
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="surel">Surel</label>
+                <input
+                  id="surel"
+                  name="surel"
+                  type="email"
+                  placeholder="nama@kampus.ac.id"
+                  required
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="tanggal-lahir">Tanggal Lahir</label>
+                <input
+                  id="tanggal-lahir"
+                  name="tanggal_lahir"
+                  type="date"
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="divisi">Pilihan Divisi</label>
+                <select id="divisi" name="divisi">
+                  <option value="frontend">Frontend Web</option>
+                  <option value="uiux">Desain UI/UX</option>
+                  <option value="dokumentasi">Publikasi &amp; Dokumentasi</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <div class="checkbox-group">
+                <input
+                  id="persetujuan"
+                  name="persetujuan"
+                  type="checkbox"
+                  required
+                >
+                <label for="persetujuan">Saya menyetujui syarat dan ketentuan kegiatan.</label>
+              </div>
+
+              <button type="submit" class="btn-submit">Kirim Pendaftaran</button>
+            </div>
+          </form>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>&copy; 2026 Pemrograman Web &middot; Informasi Panitia Kegiatan</p>
+      </footer>
+    </div>
+  </body>
+</html>
